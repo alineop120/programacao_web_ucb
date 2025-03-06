@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário com JavaScript</title>
+    <link rel="stylesheet" href="style-calculadora.css">
+</head>
+<body>
+    <div class="block-calculadora">
+        <h1>Calculadora</h1>
+        <form id="numeroForm" onsubmit="calcular(event)">
+            <label for="numero">Digite um número:</label>
+            <input type="number" id="numero" name="numero" required>
+            
+            <label for="operacao">Escolha a operação:</label>
+            <select id="operacao" name="operacao">
+                <option value="quadrado">Calcular Quadrado</option>
+                <option value="cubo">Calcular Cubo</option>
+            </select>
+            
+            <button type="submit">Calcular</button>
+        </form>
+
+        <p id="resultado-container" style="display:none;">O resultado é: <span id="resultado"></span></p>
+    </div>
+
+    <script src="calcular-calculadora.js" defer></script>
+</body>
+</html>
