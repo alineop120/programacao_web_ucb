@@ -1,2 +1,2 @@
-# programacao_web_ucb
+# Extensão - Programação WEB
  Disciplina Programação WEB da UCB
