@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicação WEB</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Simulador de Empréstimo Financeiro</h1>
+    <div class="formulario">
+        <form action="" method="get" class="form-emprestimo">
+            <div class="form-emprestimo">
+                <label for="valorEmprest">Valor do Empréstimo: </label>
+                <input type="text" name="valorEmprest" id="valorEmprest" required />
+            </div>
+            <div class="form-emprestimo">
+                <label for="txJurosA">Taxa de Juros Anual: </label>
+                <input type="text" name="txJurosA" id="txJurosA" required />
+            </div>
+            <div class="form-emprestimo">
+                <label for="prazoEmprestM">Prazo do Empréstimo (em meses): </label>
+                <input type="text" name="prazoEmprestM" id="prazoEmprestM" required />
+            </div>
+            <div class="block-button">
+                <button type="button" onclick="cadastrar()">Cadastrar</button>
+                <button onclick="limpar()">Limpar</button>
+                <button type="button" onclick="removerUltimaSimulacao()">Remover</button>
+            </div>
+        </form>
+    </div>
+    <div id="res"></div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
