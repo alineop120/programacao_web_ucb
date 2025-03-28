@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuarios</title>
+    <!-- Inclua os scripts do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>Cálculo de Custo por Metro Quadrado</h1>
+        <form id="calculoForm">
+            <div class="form-group">
+                <label for="nomedoUsuario">Área total da obra (em metros quadrados)</label>
+                <input type="text" class="form-control" id="area-obra" aria-describedby="emailHelp" placeholder="Digite a área total da obra">
+            </div>
+            <div class="form-group">
+                <label for="nomedoUsuario">Custo total dos materiais</label>
+                <input type="text" class="form-control" id="custo-materiais" aria-describedby="emailHelp" placeholder="Digite o custo total dos materiais">
+            </div>
+            <div class="form-group">
+                <label for="nomedoUsuario">Custo total da mão de obra</label>
+                <input type="text" class="form-control" id="custo-obra" aria-describedby="emailHelp" placeholder="Digite o custo total da mão de obra">
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular</button>
+        </form>
+        <h2>Cálculo Cadastrados</h2>
+        <div class="alert alert-success" role="alert">
+            <ol id="listaCusto"></ol> <!-- Lista para exibir os custo -->
+        </div>
+    </div>
+    <script src="crud.js"></script> <!-- Seu arquivo JavaScript -->
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</html>
