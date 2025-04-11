@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia</title>
+</head>
+<body>
+    <!--
+        O que precisa mostrar ao usuário?
+        * Como o usuário vai digitar o texto?
+        * Como ele vai informar o número do deslocamento?
+        * Onde o resultado será exibido?
+    -->
+    <form id="cripto-form">
+        <div class="cripto-group">
+            <label for="chave">Chave do Deslocamento:</label>
+            <input type="number" id="chave" required>
+        </div>
+        <div class="cripto-group">
+            <label for="codificar">Codificar Texto:</label>
+            <input type="text" id="codificado" required>
+        </div>
+        <button type="button" id="btnCodificar">Codificar</button>
+    </form>
+</body>
+    <script>
+        /*
+            Como pegar o código de uam letra em JavaScript?
+            Como faria pra "andar" no alfabeto usando o deslocamento? (e voltar pro começo se passar de Z?)
+            O que fazer com caracteres que não são letras (espaço, pontuação...)?
+        */
+        texto_codificado = window.document.getElementById("codificado");
+
+    </script>
+</html>
