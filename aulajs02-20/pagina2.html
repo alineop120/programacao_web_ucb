@@ -3,11 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Verificar o Nome</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="prog2.js">
+    <div class="container">
+        <h1>Bem-vindo!</h1>
+        <p>Digite seu nome para verificar se é a Maria.</p>
 
-    </script>
+        <button onclick="getUserInput()">Clique para digitar seu nome</button>
+
+        <div id="output" class="result" style="display: none;">
+            <!-- O nome do usuário será exibido aqui -->
+        </div>
+    </div>
+
+    <script>
+        function getUserInput() {
+            var nm = prompt('Digite o nome: ');
+            var outputDiv = document.getElementById("output");
+
+            if (nm === "Maria") {
+                outputDiv.style.display = "block";
+                outputDiv.innerHTML = "Você é a <span style='color: red;'>" + nm + "</span>! Seja bem-vinda ao nosso site!";
+            } else {
+                outputDiv.style.display = "block";
+                outputDiv.innerHTML = "Você não é a Maria, mas <span style='color: blue;'>" + nm + "</span>, seja bem-vindo(a) ao nosso site!";
+            }
+        }
+    </script>    
 </body>
 </html>
