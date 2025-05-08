@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="prog3.js"></script>
+    <div class="container">
+        <h1>Valores Coloridos</h1>
+        <p>Digite um valor:</p>
+        <button onclick="getNumberInput()">Clique para digitar o valor</button>
+        <div id="output" class="result" style="display: none;"></div>
+    </div>
+
+    <script>
+        function getNumberInput() {
+            var valor = Number(prompt("Digite um valor: "));
+            var outputDiv = document.getElementById("output");
+            outputDiv.style.display = "block";  // Torna a div visível
+            outputDiv.innerHTML = ""; // Limpa o conteúdo existente da div
+
+            for (var i = 0; i < valor; i++) {
+                var paragraph = document.createElement("p");
+                if (i % 2 == 0) {
+                    paragraph.style.color = "red";
+                } else {
+                    paragraph.style.color = "green";
+                }
+                paragraph.textContent = "" + i;
+                outputDiv.appendChild(paragraph);
+            }
+        }
+    </script>
 </body>
 </html>
