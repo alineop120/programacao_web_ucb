@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boas-vindas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="prog1.js">
+    <div class="container">
+        <h1>Bem-vindo!</h1>
+        <p>Digite seu nome para personalizar sua mensagem.</p>
 
+        <button onclick="getUserInput()">Clique para digitar seu nome</button>
+
+        <div id="output" class="result" style="display: none;"></div>
+    </div>
+
+    <script>
+        // Função para pegar o nome do usuário e exibir
+        function getUserInput() {
+            var nm = prompt('Digite seu nome: ');
+            // Verifica se o usuário digitou algo
+            if (nm) {
+                // Exibe o nome no console
+                console.log("O nome digitado foi " + nm);
+                // Mostra a mensagem personalizada na página
+                var outputDiv = document.getElementById("output");
+                outputDiv.style.display = "block";
+                outputDiv.innerHTML = "Olá, " + nm + "! Seja bem-vindo ao nosso site!";
+            } else {
+                alert("Você não digitou um nome.");
+            }
+        }
     </script>
 </body>
 </html>
