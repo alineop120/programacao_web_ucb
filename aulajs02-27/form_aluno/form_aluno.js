@@ -20,7 +20,6 @@ function entrada() {
         solicitarNotas();
     }
 }
-
 function solicitarNotas() {
     while (true) {
         nota1 = parseFloat(prompt("Digite a primeira nota:"));
