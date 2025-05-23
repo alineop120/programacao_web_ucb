@@ -4,3 +4,5 @@
     * npm i cors (faz a rota entre server e o mysql) 
     * npm add mysql2 express cors nodemon
     * npm init -y (para inicializar o servidor)
+    * npm i cors
+    

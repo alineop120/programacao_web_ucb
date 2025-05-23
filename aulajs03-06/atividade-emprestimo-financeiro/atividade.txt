@@ -1,0 +1,4 @@
+Crie uma aplicação web que permita ao usuário simular um
+empréstimo financeiro. O usuário deve inserir o valor do
+empréstimo, a taxa de juros anual e o prazo do empréstimo em meses. A aplicação deve calcular o valor total dos juros e o  montante final a ser pago. Os resultados devem ser exibidos em uma tabela, e o usuário deve poder limpar os dados ou remover a
+última simulação.

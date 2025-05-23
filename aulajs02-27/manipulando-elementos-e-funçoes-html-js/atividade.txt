@@ -1,0 +1,12 @@
+## Agora que você entendeu o código, faça as seguintes modificações:
+* Adicionar um Campo de Curso:
+* Modifique a função entrar() para pedir também o curso do usuário.
+* Exiba a mensagem: "Bem-vindo, [nome], ao curso de [curso]!".
+* Calcular Média de Três Notas:
+* Crie uma nova função chamada mediaTresNotas(nota1, nota2, nota3).
+* Calcule a média das três notas e exiba no console se o aluno foi aprovado ou reprovado.
+
+## Estilizar a Página:
+* Adicione um arquivo style.css e estilize a página:
+* Altere a cor de fundo, fonte e tamanho do botão.
+* Centralize o conteúdo na página.

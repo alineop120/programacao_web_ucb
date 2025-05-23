@@ -1,0 +1,17 @@
+Atividade
+1 -Modifique o código fornecido para que, além de calcular o
+quadrado do número, ele também calcule e exiba o cubo do
+número. O resultado deve ser exibido na mesma página, abaixo do
+resultado do quadrado.
+Colocando uma estilização com css ou bootstrap
+
+2 – Modifique o código para que o usuário possa escolher entre
+calcular o quadrado ou o cubo do número. Adicione um campo de
+seleção (<select>) para que o usuário escolha a operação
+desejada. O resultado deve ser exibido na mesma página.
+
+3- Crie um formulário HTML que permita ao usuário inserir o valor
+total de uma compra, o número de parcelas e a taxa de juros
+mensal. O sistema deve calcular e exibir o valor de cada parcela e
+o valor total a ser pago (valor da compra + juros). O resultado
+deve ser exibido na mesma página.
